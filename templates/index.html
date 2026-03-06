@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Dev Journal</title>
+</head>
+<body>
+    <h1>개발 일지 목록</h1>
+    <a href="/write">새 글 쓰기</a>
+    <hr>
+    {% for journal in journals %}
+        <div>
+            <h3>{{ journal.title }}</h3>
+            <p>{{ journal.content }}</p>
+        </div>
+        <hr>
+    {% endfor %}
+</body>
+</html>
